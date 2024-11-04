@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+    <a class="navbar-brand font-weight-bold" href="#">Garden Home</a>
+    <img src="images/logo.jpg" alt="Garden Home Logo" class="logo mr-2" id="logo">
+</nav>
+
+<!-- Contenedor principal -->
+<div class="container my-4">
+    <!-- Pestañas -->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active font-weight-bold" id="inicio-tab" data-toggle="tab" href="#inicio" role="tab" aria-controls="inicio" aria-selected="true">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" id="productos-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="productos" aria-selected="false">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" id="mision-vision-tab" data-toggle="tab" href="#mision-vision" role="tab" aria-controls="mision-vision" aria-selected="false">Misión y Visión</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" id="contacto-tab" data-toggle="tab" href="#contacto" role="tab" aria-controls="contacto" aria-selected="false">Contacto</a>
+        </li>
+    </ul>
+
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content" id="myTabContent">
+        <!-- Sección Inicio -->
+        <div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab">
+            <div class="text-center mt-4">
+                <h1 class="display-4 text-success font-weight-bold">Bienvenido a Garden Home</h1>
+                <p class="lead">Productos de jardinería para crear espacios verdes saludables y hermosos.</p>
+            </div>
+        </div>
+
+        <!-- Sección Productos -->
+        <div class="tab-pane fade" id="productos" role="tabpanel" aria-labelledby="productos-tab">
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/insecticida.jpeg" class="card-img-top" alt="Insecticida">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-success">Insecticida</h5>
+                            <p class="card-text text-muted">Precio: $10.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/rastrillo.png" class="card-img-top" alt="Herramienta para Jardín">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-success">Rastrillo para Jardín</h5>
+                            <p class="card-text text-muted">Precio: $15.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/abre hueco.jpeg" class="card-img-top" alt="Abono Orgánico">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-success">Abono Orgánico</h5>
+                            <p class="card-text text-muted">Precio: $8.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/pala.jpeg" class="card-img-top" alt="Abono Orgánico">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold text-success">Abono Orgánico</h5>
+                            <p class="card-text text-muted">Precio: $8.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Misión y Visión -->
+        <div class="tab-pane fade" id="mision-vision" role="tabpanel" aria-labelledby="mision-vision-tab">
+            <div class="p-4 bg-light shadow mt-4 rounded">
+                <h2 class="text-success font-weight-bold">Misión</h2>
+                <p>Nuestra misión es proporcionar soluciones innovadoras y sostenibles para ayudar a nuestros clientes a crear espacios verdes saludables y hermosos, fomentando la conexión con la naturaleza...</p>
+
+                <h2 class="text-success font-weight-bold">Visión</h2>
+                <p>Ser líderes en el mercado de productos de jardinería, reconocidos por nuestra pasión por la innovación, la sostenibilidad y la excelencia en el servicio...</p>
+            </div>
+        </div>
+
+        <!-- Sección Contacto -->
+        <div class="tab-pane fade" id="contacto" role="tabpanel" aria-labelledby="contacto-tab">
+            <div class="mt-4 text-center">
+                <h2 class="text-success font-weight-bold">Contacto</h2>
+                <p>Para más información sobre nuestros productos, contáctanos:</p>
+                <ul class="list-unstyled">
+                    <li><a href="tel:+573001234567" class="btn btn-outline-success font-weight-bold">+57 300 123 4567</a></li>
+                    <li><a href="tel:+573008765432" class="btn btn-outline-success font-weight-bold">+57 300 876 5432</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade" id="logoModal" tabindex="-1" role="dialog" aria-labelledby="logoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <img src="images/logo.jpg" alt="Garden Home Logo Grande" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pie de página -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 Garden Home - Todos los derechos reservados</p>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Agregar evento para mostrar el logo en grande en un modal
+    document.getElementById('logo').addEventListener('click', function() {
+        $('#logoModal').modal('show');
+    });
+</script>
+</body>
+</html>
